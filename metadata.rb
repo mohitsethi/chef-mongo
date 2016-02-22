@@ -10,3 +10,5 @@ issues_url       'https://github.com/szelcsanyi/chef-mongo/issues'
 
 supports 'ubuntu', '>= 12.04'
 supports 'debian', '>= 7.0'
+
+depends 'cron'
