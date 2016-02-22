@@ -36,6 +36,7 @@ action :remove do
 end
 
 action :create do
+  include_recipe 'cron'
   Chef::Log.info("MongoDB binary: #{new_resource.name}")
 
   base = "#{new_resource.home}/mongodb-#{new_resource.name}"
